@@ -1,6 +1,6 @@
-# 1. Introduction
+1. Introduction
 
-## 1.1 Purpose
+1.1 Purpose
 
 The purpose of this document is to describe the functional and non-functional requirements for the development of an **E-Commerce Website using the MERN Stack (MongoDB, Express.js, React.js, and Node.js)**.
 
@@ -8,26 +8,23 @@ The platform will allow users to browse products, register accounts, add product
 
 This document will serve as a guideline for developers, designers, and stakeholders involved in the development and maintenance of the system.
 
----
 
-## 1.2 Scope
+1.2 Scope
 
 The proposed system is a **web-based e-commerce platform** that enables users to purchase products online.
 
 The website will include:
 
-* User registration and authentication
-* Product browsing and searching
-* Shopping cart functionality
-* Online order placement
-* Payment gateway integration
-* Admin panel for managing products and orders
+User registration and authentication
+Product browsing and searching
+Shopping cart functionality
+Online order placement
+Payment gateway integration
+Admin panel for managing products and orders
 
 The system will be developed using the **MERN stack**, ensuring scalability, high performance, and efficient data management.
 
----
-
-## 1.3 Definitions, Acronyms, and Abbreviations
+1.3 Definitions, Acronyms, and Abbreviations
 
 | Term | Meaning                                |
 | ---- | -------------------------------------- |
@@ -39,58 +36,54 @@ The system will be developed using the **MERN stack**, ensuring scalability, hig
 | JWT  | JSON Web Token                         |
 | CRUD | Create, Read, Update, Delete           |
 
----
 
-## 1.4 References
+1.4 References
 
-* MERN Stack Documentation
-* MongoDB Official Documentation
-* React.js Official Documentation
-* Node.js Official Documentation
-* Express.js Documentation
+MERN Stack Documentation
+MongoDB Official Documentation
+React.js Official Documentation
+Node.js Official Documentation
+Express.js Documentation
 
----
 
-## 1.5 Overview
+
+1.5 Overview
 
 This document describes:
 
-* Overall system description
-* System features
-* Functional requirements
-* Non-functional requirements
-* System constraints
-* System architecture
+Overall system description
+System features
+Functional requirements
+Non-functional requirements
+System constraints
+System architecture
 
----
 
-# 2. Overall Description
+2. Overall Description
 
-## 2.1 Product Perspective
+2.1 Product Perspective
 
 The system is a **full-stack web application** consisting of:
 
 Frontend:
 
-* React.js
-* HTML
-* CSS
-* JavaScript
+React.js
+HTML
+CSS
+JavaScript
 
 Backend:
 
-* Node.js
-* Express.js
+Node.js
+Express.js
 
 Database:
 
-* MongoDB
+MongoDB
 
 The application will follow a **client-server architecture** where the frontend communicates with the backend through REST APIs.
 
----
-
-## 2.2 Product Functions
+2.2 Product Functions
 
 The major functions of the system include:
 
@@ -104,139 +97,130 @@ The major functions of the system include:
 8. Admin order management
 9. User profile management
 
----
 
-## 2.3 User Classes and Characteristics
+2.3 User Classes and Characteristics
 
-### 1. Customer (User)
+1. Customer (User)
 
 Capabilities:
 
-* Create account
-* Login and logout
-* Browse products
-* Add products to cart
-* Place orders
-* Track order status
+Create account
+Login and logout
+Browse products
+Add products to cart
+Place orders
+Track order status
 
 Skill Level:
 Basic computer and internet knowledge.
 
----
-
-### 2. Administrator
+2. Administrator
 
 Capabilities:
 
-* Manage products
-* Add/edit/delete products
-* Manage user accounts
-* Process and manage orders
-* Monitor website performance
+Manage products
+Add/edit/delete products
+Manage user accounts
+Process and manage orders
+Monitor website performance
 
 Skill Level:
 Intermediate technical knowledge.
 
----
 
-## 2.4 Operating Environment
+2.4 Operating Environment
 
 The system will operate on:
 
 Frontend:
 
-* Modern Web Browsers (Chrome, Firefox, Edge)
+Modern Web Browsers (Chrome, Firefox, Edge)
 
 Backend:
 
-* Node.js runtime
+Node.js runtime
 
 Database:
 
-* MongoDB
+MongoDB
 
 Operating System:
 
-* Windows
-* Linux
-* macOS
+Windows
+Linux
+macOS
 
----
 
-## 2.5 Design and Implementation Constraints
+2.5 Design and Implementation Constraints
 
-* Must use **MERN stack technologies**
-* Secure authentication using **JWT**
-* Database must be **MongoDB**
-* Must support **REST API architecture**
-* Must follow **responsive design principles**
+Must use MERN stack technologies
+Secure authentication using JWT
+Database must be MongoDB
+Must support REST API architecture
+Must follow responsive design principles
 
----
 
-## 2.6 Assumptions and Dependencies
+2.6 Assumptions and Dependencies
 
 Assumptions:
 
-* Users have internet access
-* Users have compatible web browsers
+Users have internet access
+Users have compatible web browsers
 
 Dependencies:
 
-* MongoDB Database Server
-* Payment Gateway API
-* Hosting platform
+MongoDB Database Server
+Payment Gateway API
+Hosting platform
 
----
 
-# 3. System Features
+3. System Features
 
----
 
-# 3.1 User Registration
 
-### Description
+3.1 User Registration
+
+Description
 
 Allows new users to create an account on the platform.
 
-### Functional Requirements
+Functional Requirements
 
-* Users must enter:
+Users must enter:
 
   * Name
   * Email
   * Password
   * Phone number
 
-* System must:
+System must:
 
   * Validate input fields
   * Encrypt passwords
   * Store user data in MongoDB
 
----
 
-# 3.2 User Login
+3.2 User Login
 
-### Description
+Description
 
 Allows registered users to access their accounts.
 
-### Functional Requirements
+Functional Requirements
 
 * User enters email and password
 * System validates credentials
 * System generates JWT token
 * User session is created
 
----
 
-# 3.3 Product Catalog
+3.3 Product Catalog
 
-### Description
+Description
 
 Displays available products.
 
-### Functional Requirements
+Functional Requirements
 
 * View all products
 * View product details
@@ -252,15 +236,14 @@ Product details include:
 * Image
 * Stock availability
 
----
 
-# 3.4 Shopping Cart
+3.4 Shopping Cart
 
-### Description
+Description
 
 Allows users to manage products before purchasing.
 
-### Functional Requirements
+Functional Requirements
 
 * Add products to cart
 * Remove products from cart
@@ -268,15 +251,13 @@ Allows users to manage products before purchasing.
 * View cart summary
 * Calculate total price
 
----
+3.5 Order Management
 
-# 3.5 Order Management
-
-### Description
+Description
 
 Handles order placement and tracking.
 
-### Functional Requirements
+Functional Requirements
 
 Users can:
 
@@ -290,15 +271,14 @@ System must:
 * Store order details in database
 * Update order status
 
----
 
-# 3.6 Payment Processing
+3.6 Payment Processing
 
-### Description
+Description
 
 Allows users to make secure online payments.
 
-### Functional Requirements
+Functional Requirements
 
 Supported payment methods:
 
@@ -312,15 +292,14 @@ System must:
 * Confirm order after successful payment
 * Store payment information securely
 
----
 
-# 3.7 Admin Panel
+3.7 Admin Panel
 
-### Description
+Description
 
 Provides control panel for administrators.
 
-### Functional Requirements
+Functional Requirements
 
 Admin can:
 
@@ -330,13 +309,12 @@ Admin can:
 * Manage orders
 * View user accounts
 
----
 
-# 4. External Interface Requirements
+4. External Interface Requirements
 
----
 
-## 4.1 User Interface
+
+4.1 User Interface
 
 The system will provide a responsive interface including:
 
@@ -351,18 +329,15 @@ Pages:
 * User Dashboard
 * Admin Dashboard
 
----
-
-## 4.2 Hardware Interface
+4.2 Hardware Interface
 
 Users require:
 
 * Computer / Laptop / Smartphone
 * Internet connection
 
----
 
-## 4.3 Software Interface
+4.3 Software Interface
 
 The system interacts with:
 
@@ -370,30 +345,26 @@ The system interacts with:
 * Payment Gateway APIs
 * Browser APIs
 
----
 
-## 4.4 Communication Interface
+4.4 Communication Interface
 
 Communication occurs via:
 
 * HTTP/HTTPS protocol
 * REST APIs
 
----
+5. Non-Functional Requirements
 
-# 5. Non-Functional Requirements
 
----
 
-## 5.1 Performance Requirements
+5.1 Performance Requirements
 
 * Page load time must be less than **3 seconds**
 * System must support **multiple concurrent users**
 * API response time must be under **500 ms**
 
----
 
-## 5.2 Security Requirements
+5.2 Security Requirements
 
 * Passwords must be **encrypted using bcrypt**
 * Authentication via **JWT tokens**
@@ -404,45 +375,38 @@ Communication occurs via:
   * XSS attacks
   * CSRF attacks
 
----
 
-## 5.3 Usability Requirements
+5.3 Usability Requirements
 
 * User-friendly interface
 * Responsive design for mobile devices
 * Easy navigation
 
----
-
-## 5.4 Reliability Requirements
+5.4 Reliability Requirements
 
 * System uptime should be **99%**
 * Database backup must be maintained
 
----
-
-## 5.5 Maintainability Requirements
+5.5 Maintainability Requirements
 
 * Modular code structure
 * Well-documented APIs
 * Use version control (Git)
 
----
-
-# 6. System Architecture
+ System Architecture
 
 The system follows **three-tier architecture**.
 
-### 1. Presentation Layer
+ 1. Presentation Layer
 
-* React.js frontend
+ React.js frontend
 
-### 2. Application Layer
+ 2. Application Layer
 
 * Node.js
 * Express.js APIs
 
-### 3. Data Layer
+ 3. Data Layer
 
 * MongoDB database
 
@@ -450,9 +414,7 @@ Data Flow:
 
 User → React Frontend → Express API → MongoDB → Response to User
 
----
-
-# 7. Future Enhancements
+ 7. Future Enhancements
 
 Possible improvements include:
 
